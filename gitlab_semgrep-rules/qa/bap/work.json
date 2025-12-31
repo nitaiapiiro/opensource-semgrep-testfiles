@@ -1,0 +1,289 @@
+{
+	"source": "registry.gitlab.com/gitlab-org/security-products/sast-rules/semgrepbap",
+	"source_tag": "latest",
+	"target": "registry.gitlab.com/gitlab-org/security-products/sast-rules/semgrep-sast-rules",
+	"target_tag": "TARGET_TAG",
+	"shared_env": {
+		"SAST_EXCLUDED_PATHS": "spec, test, tests, tmp, testdata",
+		"SEARCH_MAX_DEPTH": "50",
+		"SAST_SCANNER_ALLOWED_CLI_OPTS": "--timeout 0"
+	},
+	"jobs": [
+		{
+			"REPO_URL": "https://gitlab.com/gitlab-org/security-products/sast-rules.git",
+			"REPO_NAME": "sast-rules"
+		},
+		{
+			"REPO_URL": "https://github.com/FFmpeg/FFmpeg.git",
+			"REPO_NAME": "ffmpeg"
+		},
+		{
+			"REPO_URL": "https://github.com/sqlite/sqlite.git",
+			"REPO_NAME": "sqlite"
+		},
+		{
+			"REPO_URL": "https://github.com/curl/curl.git",
+			"REPO_NAME": "curl"
+		},
+		{
+			"REPO_URL": "https://github.com/vim/vim.git",
+			"REPO_NAME": "vim"
+		},
+		{
+			"REPO_URL": "https://github.com/nginx/nginx.git",
+			"REPO_NAME": "nginx"
+		},
+		{
+			"REPO_URL": "https://github.com/files-community/Files.git",
+			"REPO_NAME": "files-community"
+		},
+		{
+			"REPO_URL": "https://github.com/AvaloniaUI/Avalonia.git",
+			"REPO_NAME": "avalonia"
+		},
+		{
+			"REPO_URL": "https://github.com/dotnet/roslyn.git",
+			"REPO_NAME": "roslyn"
+		},
+		{
+			"REPO_URL": "https://github.com/ardalis/CleanArchitecture.git",
+			"REPO_NAME": "cleanarchitecture"
+		},
+		{
+			"REPO_URL": "https://github.com/OpenRA/OpenRA.git",
+			"REPO_NAME": "openra"
+		},
+		{
+			"REPO_URL": "https://github.com/bitwarden/server.git",
+			"REPO_NAME": "server"
+		},
+		{
+			"REPO_URL": "https://github.com/aspnetboilerplate/aspnetboilerplate.git",
+			"REPO_NAME": "aspnetboilerplate"
+		},
+		{
+			"REPO_URL": "https://github.com/gin-gonic/gin.git",
+			"REPO_NAME": "gin"
+		},
+		{
+			"REPO_URL": "https://github.com/moby/moby.git",
+			"REPO_NAME": "moby"
+		},
+		{
+			"REPO_URL": "https://github.com/grafana/grafana.git",
+			"REPO_NAME": "grafana"
+		},
+		{
+			"REPO_URL": "https://github.com/junegunn/fzf.git",
+			"REPO_NAME": "fzf"
+		},
+		{
+			"REPO_URL": "https://github.com/caddyserver/caddy.git",
+			"REPO_NAME": "caddy"
+		},
+		{
+			"REPO_URL": "https://github.com/traefik/traefik.git",
+			"REPO_NAME": "traefik"
+		},
+		{
+			"REPO_URL": "https://github.com/etcd-io/etcd.git",
+			"REPO_NAME": "etcd"
+		},
+		{
+			"REPO_URL": "https://github.com/ethereum/go-ethereum.git",
+			"REPO_NAME": "go-ethereum"
+		},
+		{
+			"REPO_URL": "https://github.com/gogs/gogs.git",
+			"REPO_NAME": "gogs"
+		},
+		{
+			"REPO_URL": "https://github.com/pytorch/pytorch.git",
+			"REPO_NAME": "pytorch"
+		},
+		{
+			"REPO_URL": "https://github.com/django/django.git",
+			"REPO_NAME": "django"
+		},
+		{
+			"REPO_URL": "https://github.com/pallets/flask.git",
+			"REPO_NAME": "flask"
+		},
+		{
+			"REPO_URL": "https://github.com/tiangolo/fastapi.git",
+			"REPO_NAME": "fastapi"
+		},
+		{
+			"REPO_URL": "https://github.com/home-assistant/core.git",
+			"REPO_NAME": "core"
+		},
+		{
+			"REPO_URL": "https://github.com/keras-team/keras.git",
+			"REPO_NAME": "keras"
+		},
+		{
+			"REPO_URL": "https://github.com/huggingface/transformers.git",
+			"REPO_NAME": "transformers"
+		},
+		{
+			"REPO_URL": "https://github.com/psf/requests.git",
+			"REPO_NAME": "requests"
+		},
+		{
+			"REPO_URL": "https://github.com/localstack/localstack.git",
+			"REPO_NAME": "localstack"
+		},
+		{
+			"REPO_URL": "https://github.com/scrapy/scrapy.git",
+			"REPO_NAME": "scrapy"
+		},
+		{
+			"REPO_URL": "https://github.com/axios/axios.git",
+			"REPO_NAME": "axios"
+		},
+		{
+			"REPO_URL": "https://github.com/expressjs/express.git",
+			"REPO_NAME": "express"
+		},
+		{
+			"REPO_URL": "https://github.com/chartjs/Chart.js.git",
+			"REPO_NAME": "chartjs"
+		},
+		{
+			"REPO_URL": "https://github.com/mermaid-js/mermaid.git",
+			"REPO_NAME": "mermaid"
+		},
+		{
+			"REPO_URL": "https://github.com/socketio/socket.io.git",
+			"REPO_NAME": "socketio"
+		},
+		{
+			"REPO_URL": "https://github.com/lodash/lodash.git",
+			"REPO_NAME": "lodash"
+		},
+		{
+			"REPO_URL": "https://github.com/facebook/docusaurus.git",
+			"REPO_NAME": "docusaurus"
+		},
+		{
+			"REPO_URL": "https://github.com/juliangarnier/anime.git",
+			"REPO_NAME": "anime"
+		},
+		{
+			"REPO_URL": "https://github.com/TryGhost/Ghost.git",
+			"REPO_NAME": "ghost"
+		},
+		{
+			"REPO_URL": "https://github.com/vercel/hyper.git",
+			"REPO_NAME": "hyper"
+		},
+		{
+			"REPO_URL": "https://github.com/pixijs/pixijs.git",
+			"REPO_NAME": "pixijs"
+		},
+		{
+			"REPO_URL": "https://github.com/elastic/elasticsearch.git",
+			"REPO_NAME": "elasticsearch"
+		},
+		{
+			"REPO_URL": "https://github.com/spring-projects/spring-boot.git",
+			"REPO_NAME": "spring-boot"
+		},
+		{
+			"REPO_URL": "https://github.com/google/guava.git",
+			"REPO_NAME": "guava"
+		},
+		{
+			"REPO_URL": "https://github.com/ReactiveX/RxJava.git",
+			"REPO_NAME": "rxjava"
+		},
+		{
+			"REPO_URL": "https://github.com/square/okhttp.git",
+			"REPO_NAME": "okhttp"
+		},
+		{
+			"REPO_URL": "https://github.com/square/retrofit.git",
+			"REPO_NAME": "retrofit"
+		},
+		{
+			"REPO_URL": "https://github.com/xkcoding/spring-boot-demo.git",
+			"REPO_NAME": "spring-boot-demo"
+		},
+		{
+			"REPO_URL": "https://github.com/ityouknow/spring-boot-examples.git",
+			"REPO_NAME": "spring-boot-examples"
+		},
+		{
+			"REPO_URL": "https://github.com/SeleniumHQ/selenium.git",
+			"REPO_NAME": "selenium"
+		},
+		{
+			"REPO_URL": "https://github.com/alibaba/fastjson.git",
+			"REPO_NAME": "fastjson"
+		},
+		{
+			"REPO_URL": "https://github.com/xuxueli/xxl-job.git",
+			"REPO_NAME": "xxl-job"
+		},
+		{
+			"REPO_URL": "https://github.com/apache/flink.git",
+			"REPO_NAME": "flink"
+		},
+		{
+			"REPO_URL": "https://github.com/jenkinsci/jenkins.git",
+			"REPO_NAME": "jenkins"
+		},
+		{
+			"REPO_URL": "https://github.com/blueimp/jQuery-File-Upload.git",
+			"REPO_NAME": "jquery-file-upload"
+		},
+		{
+			"REPO_URL": "https://github.com/nextcloud/server.git",
+			"REPO_NAME": "nextcloud-server"
+		},
+		{
+			"REPO_URL": "https://github.com/DesignPatternsPHP/DesignPatternsPHP.git",
+			"REPO_NAME": "designpatternsphp"
+		},
+		{
+			"REPO_URL": "https://github.com/monicahq/monica.git",
+			"REPO_NAME": "monica"
+		},
+		{
+			"REPO_URL": "https://github.com/matomo-org/matomo.git",
+			"REPO_NAME": "matomo"
+		},
+		{
+			"REPO_URL": "https://github.com/duckduckgo/Android.git",
+			"REPO_NAME": "duckduckgo"
+		},
+		{
+			"REPO_URL": "https://github.com/cSploit/android.git",
+			"REPO_NAME": "csploit"
+		},
+		{
+			"REPO_URL": "https://github.com/hmkcode/Android.git",
+			"REPO_NAME": "hmkcode"
+		},
+		{
+  			"REPO_URL": "https://github.com/korlibs/korge",
+			"REPO_NAME": "korge"
+		},
+		{
+  			"REPO_URL": "https://github.com/KotlinBy/awesome-kotlin",
+			"REPO_NAME": "awesome-kotlin"
+		},
+		{
+  			"REPO_URL": "https://github.com/ktorio/ktor",
+			"REPO_NAME": "ktor"
+		},
+		{
+  			"REPO_URL": "https://github.com/corda/corda-runtime-os",
+			"REPO_NAME": "corda-runtime-os"
+		},
+		{
+  			"REPO_URL": "https://github.com/edvin/tornadofx",
+			"REPO_NAME": "tornadofx"
+		}
+	]
+}

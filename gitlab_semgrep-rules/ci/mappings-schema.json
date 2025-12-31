@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "minProperties": 1,
+    "maxProperties": 1,
+    "patternProperties": {
+      "^(gitlab_.*|eslint|bandit|security_code_scan|gosec|flawfinder|find_sec_bugs|find_sec_bugs_scala|find_sec_bugs_kotlin|nodejs_scan|phpcs_security_audit|mobsf|brakeman)$": {
+        "type": "object",
+        "properties": {
+          "native_analyzer": {
+            "type": "string"
+          },
+          "native_id": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": ["type", "name", "value"],
+            "additionalProperties": false
+          },
+          "mappings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "rules": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "path": {
+                        "type": "string"
+                      },
+                      "primary_id": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      }
+                    },
+                    "required": ["path", "primary_id", "id"],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": ["id", "rules"],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": ["native_id", "mappings"],
+        "additionalProperties": true
+      }
+    },
+    "additionalProperties": false
+  }
